@@ -1,0 +1,22 @@
+<div class="hidden md:flex md:mx-16 space-x-4 text-lg text-white mt-2 font-roboto">
+    <a [routerLink]="['/']" appNavhoverbg class="px-2 py-1">{{menu.nav1}}</a>
+    <a [routerLink]="['/portfolio']" routerLinkActive="router-link-active" class="px-2 py-1" appNavhoverbg>{{menu.nav3}}</a>
+    <!-- <a [routerLink]="['/services']" routerLinkActive="router-link-active" class="px-2 py-1" appNavhoverbg>{{menu.nav4}}</a> -->
+    <a [routerLink]="['/contactus']" routerLinkActive="router-link-active" class="px-2 py-1" appNavhoverbg>{{menu.nav5}}</a>
+</div>
+<div (click)="toggleMenu()" class="md:hidden">
+    <button class="text-gray-300 focus:outline-none justify-end">
+        <ul class="w-15 min-h-8 p-2 rounded bg-white block absolute right-4 top-2 mt-3">
+            <li class="bg-gray-500 rounded w-8 h-1 mt-1"></li>
+            <li class="bg-gray-500 rounded w-8 h-1 mt-1"></li>
+            <li class="bg-gray-500 rounded w-8 h-1 mt-1"></li>
+        </ul>
+    </button>
+</div>
+<div [ngClass]="{'hidden':!isMenuOpen}"
+    class="md:hidden md:mx-16 flex flex-col space-y-4 mt-12 min-w-full text-center text-white text-sm">
+    <a [routerLink]="['/']" appNavhoverbg class="px-2 py-1">{{menu.nav1}}</a>
+    <a [routerLink]="['/portfolio']" routerLinkActive="router-link-active">{{menu.nav3}}</a>
+    <!-- <a [routerLink]="['/services']" routerLinkActive="router-link-active">{{menu.nav4}}</a> -->
+    <a [routerLink]="['/contactus']" routerLinkActive="router-link-active">{{menu.nav5}}</a>
+</div>

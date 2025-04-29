@@ -1,0 +1,67 @@
+<nav class="nav-bg p-4">
+    <div class="min-w-80 md:mx-14 mx-2  flex flex-col md:flex-row justify-between text-center">
+        <a routerLink="/" class="text-white">
+            <svg width="50" height="36" class="float-left mr-2" viewBox="0 0 50 36" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M35.7081 0.107159H0L2.33196 2.37331H38.2587C43.2724 2.95812 45.9347 6.56446 46.6391 8.29453C47.9217 10.1074 47.4165 13.8746 47.0035 15.5316C45.4294 19.9761 41.3437 21.7208 39.4975 22.0376H30.6069C28.858 22.0961 28.5665 22.8905 28.6394 23.2803V36H31.1899V24.3769H37.0198C41.9169 24.6108 44.9873 22.4275 45.9104 21.3066C49.4083 17.9147 50.0885 13.9477 49.9913 12.3882C50.0496 7.70972 47.295 4.39578 45.9104 3.32363C42.7623 -0.0098033 37.7971 -0.209614 35.7081 0.107159Z"
+                    fill="url(#paint0_linear_1_3)" />
+                <path
+                    d="M38.2587 5.58977H5.5384L7.87036 7.92902H38.2587C41.3485 8.80624 42.0238 10.9749 41.9752 11.9496C42.0918 14.4643 39.9834 15.9702 38.9145 16.4088H24.6313C23.5819 16.4673 23.3196 17.5541 23.3196 18.0901V36H25.5787L25.943 19.1136H38.9145C43.695 17.3591 44.5987 13.6066 44.4529 11.9496C43.9865 7.03718 40.1291 5.66287 38.2587 5.58977Z"
+                    fill="url(#paint1_linear_1_3)" />
+                <path d="M8.67197 13.9233L6.12139 16.1164H19.3844V13.9233H8.67197Z" fill="url(#paint2_linear_1_3)" />
+                <path d="M3.13357 19.2598L0.728737 21.599H19.3844V19.2598H3.13357Z" fill="url(#paint3_linear_1_3)" />
+                <path d="M19.3844 27.4471H8.16185L5.97564 29.8595H19.3844V27.4471Z" fill="url(#paint4_linear_1_3)" />
+                <path d="M2.98782 33.0759L0.291495 35.3421H19.3115V33.0759H2.98782Z" fill="url(#paint5_linear_1_3)" />
+                <defs>
+                    <linearGradient id="paint0_linear_1_3" x1="25" y1="0" x2="25" y2="36"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="white" />
+                        <stop offset="0.5" stop-color="#8897A9" />
+                        <stop offset="1" stop-color="#E2E3E4" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_1_3" x1="25" y1="0" x2="25" y2="36"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="white" />
+                        <stop offset="0.5" stop-color="#8897A9" />
+                        <stop offset="1" stop-color="#E2E3E4" />
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_1_3" x1="25" y1="0" x2="25" y2="36"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="white" />
+                        <stop offset="0.5" stop-color="#8897A9" />
+                        <stop offset="1" stop-color="#E2E3E4" />
+                    </linearGradient>
+                    <linearGradient id="paint3_linear_1_3" x1="25" y1="0" x2="25" y2="36"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="white" />
+                        <stop offset="0.5" stop-color="#8897A9" />
+                        <stop offset="1" stop-color="#E2E3E4" />
+                    </linearGradient>
+                    <linearGradient id="paint4_linear_1_3" x1="25" y1="0" x2="25" y2="36"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="white" />
+                        <stop offset="0.5" stop-color="#8897A9" />
+                        <stop offset="1" stop-color="#E2E3E4" />
+                    </linearGradient>
+                    <linearGradient id="paint5_linear_1_3" x1="25" y1="0" x2="25" y2="36"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="white" />
+                        <stop offset="0.5" stop-color="#8897A9" />
+                        <stop offset="1" stop-color="#E2E3E4" />
+                    </linearGradient>
+                </defs>
+            </svg>
+            <img src="/assets/img/Eyeconicpixel.png" class="mt-2" />
+        </a>
+        <div *ngFor="let nav of menu, let i=index" class="pull-right">
+            <!-- <ul class="flex space-x-4 text-white mt-3">
+                <li><a href="#"><i class="fa fa-facebook-square float-left mr-2" aria-hidden="true"></i> Facebook</a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin-square float-left mr-2" aria-hidden="true"></i> Linkedin</a>
+                </li>
+            </ul> -->
+            <app-navbar-list [menu]="nav"></app-navbar-list>
+        </div>
+    </div>
+</nav>

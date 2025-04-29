@@ -1,0 +1,40 @@
+
+
+<div class="w-full mx-auto min-h-72">
+  
+  <!--About content-->
+  <div class="relative w-full mx-auto lg:max-h-fit h-full min-h-96 pb-14 bg-white">
+    <div class="lg:flex lg:flex-row md:flex mx-15  flex-col">
+      <div class="bg-red-200 mx-2 mr-1 rounded-md md:w-fit lg:w-1/2 md:h-fit md:-mt-3 -mt-2">
+        <img [src]="aboutImg" class="md:img-fluid rounded-md" />
+      </div>
+      <div class="md:min-w-80 lg:w-1/2 w-full bg-white">
+        <p class="lg:text-4xl md:text-3xl text-black md:pt-6 pt-4 px-5 my-0 py-0 text-xl">Web Design Company <br />You Can
+          Trust<br /></p>
+        <p class="text-lg text-justify leading-5 px-5"><span class="text-2xl" appHighlightedText>EyeconicPixel</span> is a full-service website design and development agency specializing in creating visually compelling, highly functional, and user-friendly websites that drive business growth. We offer a wide range of services, including custom web design, responsive development, e-commerce solutions, and content management systems. Our team of skilled designers and developers work collaboratively to deliver 
+          cutting-edge digital experiences tailored to meet your brand’s unique needs.
+        <br/>
+        <span appHighlightedText>Our expertise</span> covers front-end technologies like Angular, React,TailwindCss and Bootstrap, as well as back-end development with frameworks such as Node.js, PHP</p>
+        <a [routerLink]="['/aboutus']" routerLinkActive="router-link-active" class="bg-orange-700 rounded p-2 text-white text-lg float-right mr-20">Know More.. >></a>
+      </div>
+    </div>
+  </div>
+  <!--about content ends here-->
+  <div class="w-full mx-auto lg:mt-0 lg:h-full h-full">
+    <app-features></app-features>
+  </div>
+
+  <!--image-gallery start-->
+  <!-- <div class="w-full mx-auto lg:-mt-10 mt-96 h-full lg:min-h-96">
+    <app-work-gallery></app-work-gallery>
+   </div> -->
+  <div class="w-full mx-auto lg:mt-10 mt-10 h-full">
+    <app-technology></app-technology>
+  </div>
+  <div class="w-full mx-auto lg:mt-0 lg:min-h-80">
+    <app-howitisgoing></app-howitisgoing>
+  </div>
+  <div class="w-full mx-auto lg:max-h-fit bg-black min-h-full h-full pb-5">
+     <app-contacts></app-contacts>
+    </div>
+</div>

@@ -1,0 +1,47 @@
+<div class="w-full mx-auto bg-black">
+    <div class="mx-15 flex flex-col lg:flex lg:flex-row h-full">
+      <div class="bg-red-200 mx-2 mr-2 rounded-md md:w-fit  lg:w-fit md:h-fit  mt-10 lg:mt-2">
+        <img [src]="contactImg" class="md:img-fluid rounded-md" />
+      </div>
+      <div class="md:min-w-72">
+        <div class="text-3xl text-white px-2 pt-2">Get a <span appHighlightedText>free</span> Quote
+          of Your Future Website!
+        </div>
+        <p class="text-lg text-white px-2"> Your requirements for a website, we will research your specification, create a
+          prototype of the website for free and sed a result to you!</p>
+
+
+        <div class="container lg:w-1/2 px-2">
+          <form  #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+            <div class="mb-4">
+              <label class="block text-gray-700 text-sm font-bold mb-2" for="Your Name">
+                Your Name
+              </label>
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline formControl"
+                id="yourName" type="text" placeholder="yourName" name="yourName" [(ngModel)]="userDetails.yourName">
+            </div>
+            <div class="mb-4">
+              <label class="block text-gray-700 text-sm font-bold mb-2" for="Mobile">
+                Mobile No.
+              </label>
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline formControl"
+                id="mobile" type="number" placeholder="Mobile No." name="mobile" [(ngModel)]="userDetails.mobile">
+            </div>
+            <div class="mb-4">
+              <label class="block text-gray-700 text-sm font-bold mb-2" for="Message">
+                Enquiry.
+              </label>
+              <textarea
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline formControl"
+                id="message" type="text" placeholder="Message" name="message" [(ngModel)]="userDetails.message"></textarea>
+            </div>
+            <div class="mb-4">
+              <button type="submit" class="bg-orange-600 w-40 h-10 rounded text-white">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
