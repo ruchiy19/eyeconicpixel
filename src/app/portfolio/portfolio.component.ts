@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Observable } from 'rxjs';
 import { HttpClientModule,HttpClient } from '@angular/common/http';
+import { HighlightedTextDirective } from '../share/shared/highlighted-text.directive';
+import { SectionHeadingDirective } from 'src/app/share/shared/section-heading.directive';
+
 export interface portfolioItem {
   thumbImgUrl: string;
   bigImgUrl: string;
@@ -10,7 +13,7 @@ export interface portfolioItem {
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [CommonModule,HttpClientModule],
+  imports: [CommonModule,HttpClientModule,HighlightedTextDirective,SectionHeadingDirective],
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.css']
 })

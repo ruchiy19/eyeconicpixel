@@ -8,11 +8,12 @@ import {NgForm } from '@angular/forms';
 import { HighlightedTextDirective } from 'src/app/share/shared/highlighted-text.directive';
 import { RouterLink } from '@angular/router';
 import { Router,NavigationEnd } from '@angular/router';
+import { PortfolioComponent } from 'src/app/portfolio/portfolio.component';
 import { ContactsComponent } from '../contacts/contacts.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterLink, TechnologyComponent, FeaturesComponent, HowitisgoingComponent, ContactsComponent],
+  imports: [CommonModule, RouterLink, TechnologyComponent,PortfolioComponent, FeaturesComponent, HowitisgoingComponent, ContactsComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })

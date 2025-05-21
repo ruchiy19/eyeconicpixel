@@ -1,3 +1,7 @@
+<div class="w-full mx-automin-h-full pt-10">
+    <div appSectionHeading>
+        Our <span appHighlightedText>Work</span>
+    </div>
 <div class="container max-w-fit mx-auto mt-10 my-3 min-w-96">
     <div class="flex flex-col lg:flex-row  max-w-fit mx-auto space-y-2">
         <button class="w-80 border border-cyan-900 mx-5 text-center shadow-lg p-3 bg-blue-700 text-white hover:bg-orange-600 rounded" (click)="filterImages('All')" [class.active]="selectedCategory === 'All'">All</button>
@@ -10,4 +14,7 @@
              <a  routerLinkActive="router-link-active" [href]="work.url" alt="websiteUrl" target="_blank" routerLinkActive="router-link-active" > <img [src]="work.thumbImgUrl" alt="img1" class="border-slate-500 border p-2 rounded " [alt]="work.category"/></a>
         </div>
     </div>
+    <a  routerLinkActive="router-link-active" class="bg-orange-700 text-white text-right block float-right mt-4 p-3 mr-6 pr-3 rounded" [href]="" alt="websiteUrl" target="_blank" routerLinkActive="router-link-active" >View More</a>
+
+</div>
 </div>

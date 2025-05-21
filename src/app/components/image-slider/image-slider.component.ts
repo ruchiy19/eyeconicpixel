@@ -12,7 +12,7 @@ import { RouterLink } from '@angular/router';
 export class ImageSliderComponent implements OnInit, AfterViewInit{
   @ViewChild('videoPlayer', { static: false }) videoPlayer!:ElementRef;
  imgDesc="Innovative Web Solutions for a Connected World";
- subtext=" We specialize in designing and developing user-friendly, visually stunning, and performance-driven websites tailored to your business needs";
+ subtext="We craft visually stunning, high-performance websites that not only reflect your brand but also drive results. ";
   constructor(){
   }
   ngOnInit(): void {

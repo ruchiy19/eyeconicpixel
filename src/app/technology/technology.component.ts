@@ -20,12 +20,12 @@ constructor(){
     "url3":"/assets/img/icons/html5css3.jpg",
     "url4":"/assets/img/icons/boostrap.jpg",
     "url5":"/assets/img/icons/tailwindcss.jpg",
-    "url6":"/assets/img/icons/react.jpg",
-    "url7":"/assets/img/icons/nodejs.jpg",
-    "url8":"/assets/img/icons/mangoDB.jpg",
-    "url9":"/assets/img/icons/vue.jpg",
+    // "url6":"/assets/img/icons/react.jpg",
+    // "url7":"/assets/img/icons/nodejs.jpg",
+    // "url8":"/assets/img/icons/mangoDB.jpg",
+    // "url9":"/assets/img/icons/vue.jpg",
     "url10":"/assets/img/icons/angular.jpg",
-    "url11":"/assets/img/icons/laravel.jpg",
+    // "url11":"/assets/img/icons/laravel.jpg",
     "url12":"/assets/img/icons/firebaseWebAPI.jpg",
 
     }

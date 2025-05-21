@@ -1,23 +1,6 @@
 <app-navbar></app-navbar>
-<!-- <app-image-slider *ngIf="isHomePage">dsd</app-image-slider> -->
-
-<!-- Show Inner Header on Other Pages -->
-<!-- <app-inner-header *ngIf="!isHomePage"></app-inner-header> -->
-
 <app-image-slider *ngIf="isHome"></app-image-slider>
 <app-inner-header *ngIf="!isHome" [pageTitle]="pageTitle" [pageSubtitle]="pageSubtitle" [pageHeaderImg]="pageHeaderImg" [pageDesc]="pageDesc"></app-inner-header>
 
-<!-- <ng-container *ngIf="isHomePage(); else otherHeader">
-  <app-home-header></app-home-header>
-</ng-container>
-<ng-template #otherHeader>
-  <app-other-header></app-other-header>
-</ng-template> -->
-<!-- <ng-container *ngIf="isHomePage(); else otherHeader"></ng-container>
-    <app-image-slider></app-image-slider>
-  </ng-container>
-  <ng-template #otherHeader>
-    <app-inner-header></app-inner-header>
-  </ng-template> -->
 <router-outlet></router-outlet>
 <app-footer class="min-h-screen"></app-footer>
