@@ -2,19 +2,37 @@
     <div appSectionHeading>
         Our <span appHighlightedText>Work</span>
     </div>
-<div class="container max-w-fit mx-auto mt-10 my-3 min-w-96">
+<div class="container mx-auto mt-10 my-3 min-w-96">
     <div class="flex flex-col lg:flex-row  max-w-fit mx-auto space-y-2">
-        <button class="w-80 border border-cyan-900 mx-5 text-center shadow-lg p-3 bg-blue-700 text-white hover:bg-orange-600 rounded" (click)="filterImages('All')" [class.active]="selectedCategory === 'All'">All</button>
-        <button class="w-80 border border-cyan-900 mx-5 text-center shadow-lg p-3 bg-blue-700 text-white hover:bg-orange-600 rounded" (click)="filterImages('LandingPage Design')" [class.active]="selectedCategory === 'LandingPage Design'">Landing Page Design</button>
-        <button class="w-80 border border-cyan-900 mx-5 text-center shadow-lg p-3  bg-blue-700 text-white hover:bg-orange-600 rounded" (click)="filterImages('Website Design')" [class.active]="selectedCategory === 'Website Design'">Website Design</button>
+        <button class="min-w-24 border border-cyan-900 mx-5 text-center sm:shadow-md shadow-lg p-3 bg-blue-700 text-white hover:bg-orange-600 rounded" (click)="filterImages('All')" [class.active]="selectedCategory === 'All'">All</button>
+        <button class="min-w-24  border border-cyan-900 mx-5 text-center shadow-lg p-3 bg-blue-700 text-white hover:bg-orange-600 rounded" (click)="filterImages('LandingPage Design')" [class.active]="selectedCategory === 'LandingPage Design'">Landing Page Design</button>
+        <button class="min-w-24  border border-cyan-900 mx-5 text-center shadow-lg p-3  bg-blue-700 text-white hover:bg-orange-600 rounded" (click)="filterImages('Website Design')" [class.active]="selectedCategory === 'Website Design'">Website Design</button>
+        <button class="min-w-24  border border-cyan-900 mx-5 text-center shadow-lg p-3  bg-blue-700 text-white hover:bg-orange-600 rounded" (click)="filterImages('Website Development')" [class.active]="selectedCategory === 'Website Development'">Website Development</button>
+        <button class="min-w-24  border border-cyan-900 mx-5 text-center shadow-lg p-3  bg-blue-700 text-white hover:bg-orange-600 rounded" (click)="filterImages('UX/UI')" [class.active]="selectedCategory === 'UX/UI'">UX / UI</button>
+
     </div>
 
-    <div class="grid grid-rows-1 lg:grid-cols-3 gap-2 mt-10 ml-10 min-w-96">
-        <div class="min-w-full h-fit" *ngFor="let work of filteredItems;let i=index">
-             <a  routerLinkActive="router-link-active" [href]="work.url" alt="websiteUrl" target="_blank" routerLinkActive="router-link-active" > <img [src]="work.thumbImgUrl" alt="img1" class="border-slate-500 border p-2 rounded " [alt]="work.category"/></a>
+    <div class="grid grid-rows-1 lg:grid-cols-3 mt-10 ml-15 min-w-96 mx-15 w-fit mx-auto gap-4">
+        <div class="min-w-full h-fit relative" *ngFor="let work of filteredItems;let i=index">
+             <a  routerLinkActive="router-link-active" (click)="openLightbox(work.bigImgUrl)" alt="websiteUrl"> <img [src]="work.thumbImgUrl" alt="img1" class="border-slate-500 border mx-10 rounded cursor-pointer " [alt]="work.category" />
+            </a>
         </div>
     </div>
-    <a  routerLinkActive="router-link-active" class="bg-orange-700 text-white text-right block float-right mt-4 p-3 mr-6 pr-3 rounded" [href]="" alt="websiteUrl" target="_blank" routerLinkActive="router-link-active" >View More</a>
 
 </div>
+</div>
+<!-- Lightbox Popup -->
+<div  *ngIf="selectedImage" 
+  class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
+  (click)="closeLightbox()"
+>
+<div class="relative bg-white w-[90vw] max-h-[90vh] overflow-y-auto p-2 rounded shadow-lg">
+  <img [src]="selectedImage" class="max-h-[90%] max-w-[100%] rounded shadow-lg" />
+  </div>
+  <button 
+    class="absolute top-5 right-5 text-white text-3xl font-bold"
+    (click)="closeLightbox(); $event.stopPropagation();"
+  >&times;</button>
+  
+  
 </div>

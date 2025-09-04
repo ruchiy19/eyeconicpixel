@@ -18,6 +18,7 @@ export interface portfolioItem {
   styleUrls: ['./portfolio.component.css']
 })
 export class PortfolioComponent implements OnInit{
+  selectedImage: string | null = null;
   apiUrl:string= "/assets/workPortfolio.json"
   portfolioItem: any[]=[];
   filteredItems = this.portfolioItem;
@@ -41,5 +42,12 @@ export class PortfolioComponent implements OnInit{
     this.filteredItems = category === 'All'
       ? this.portfolioItem
       : this.portfolioItem.filter(image => image.category === category);
+  }
+  openLightbox(img: string) {
+    this.selectedImage = img;
+  }
+
+  closeLightbox() {
+    this.selectedImage = null;
   }
 }

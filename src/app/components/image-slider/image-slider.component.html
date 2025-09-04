@@ -1,12 +1,12 @@
-<div class="relative w-full mx-auto">
+<div class="relative w-full mx-auto mt-10">
   <div class="flex">
-      <video #videoPlayer controls loop autoplay muted class="min-w-full min-h-full lg:h-screen md:min-h-full lg:object-cover lg:full pb-10">
-      <source src="/assets/img/tech.mp4" type="video/mp4">
+      <video #videoPlayer controls loop autoplay muted class="min-w-full min-h-full lg:h-80 xl:h-full  md:min-h-full lg:object-cover lg:full pb-10 mt-5">
+      <source src="/assets/img/tech.mp4" type="video/mp4" autoplay muted loop playsinline>
       Your browser does not support the video tag.
     </video>
-      <div class="col-span-3 text-left text-xl mt-4 pb-5 md:text-3xl md:mt-4  lg:text-3xl pt-8 text-white absolute top-1  md:top-20 md:mx-10 md:px-10 md:pt-5 px-1 mx-3 text-wrap  block md:w-1/2 shadow-xl bg-black bg-opacity-30 lg:mt-20">
+      <div class="col-span-3 text-left  text-sm lg:text-3xl mt-4 pb-5 md:text-3xl md:mt-4   pt-8 text-white absolute top-1  md:top-20 md:mx-10 md:px-10 md:pt-5 px-1 mx-3 text-wrap  block md:w-1/2 shadow-xl bg-black bg-opacity-30 lg:mt-20">
         <p>{{ imgDesc}}</p>
-        <p class="min-w-fit hidden md:inline pb-0 leading-none text-lg text-left">
+        <p class="min-w-fit  sm:mt-10 md:inline pb-0 leading-none text-sm md:text-lg text-left">
          {{subtext}}
         </p>
         <br/>

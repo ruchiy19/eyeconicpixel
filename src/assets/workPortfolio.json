@@ -1,56 +1,87 @@
 [ 
     {
-      "thumbImgUrl": "/assets/img/small-site-img/home-pro.jpg",
+      "thumbImgUrl": "/assets/img/small-site-img/home-pro.jpg",      
       "bigImgUrl": "/assets/img/big-site/home-pro.png",
       "url": "https://eyeconicpixel.com/home-pro-John/",
-      "category":"LandingPage Design"
+      "category":"Website Development"
     },
     {
       "thumbImgUrl": "/assets/img/small-site-img/real-estate.jpg",
-      "bigImgUrl": "/assets/img/big-site/real-estate.jpg",
-      "url": "https://eyeconicpixel.com/ruchi/update-realestate/"
+      "bigImgUrl": "/assets/img/big-site/real-estate.png",
+      "url": "https://eyeconicpixel.com/ruchi/update-realestate/",
+      "category":"LandingPage Design"
     },
     {
       "thumbImgUrl": "/assets/img/small-site-img/pipOrg.jpg",
-      "bigImgUrl": "/assets/img/big-site/pipOrg.jpg",
+      "bigImgUrl": "/assets/img/big-site/Pip-org.png",
       "url": "https://eyeconicpixel.com/ruchi/ppi-html-new/",
-      "category":"Website Design"
+      "category":"Website Development"
     },
     {
       "thumbImgUrl": "/assets/img/small-site-img/mavenHR.jpg",
-      "bigImgUrl": "/assets/img/big-site/mavenHR.jpg",
+      "bigImgUrl": "/assets/img/big-site/mavenHR.png",
       "url": "https://eyeconicpixel.com/ruchi/maven-hr/",
       "category":"Website Design"
     },
     {
       "thumbImgUrl": "/assets/img/small-site-img/Resort.jpg",
-      "bigImgUrl": "/assets/img/big-site/Resort.jpg",
+      "bigImgUrl": "/assets/img/big-site/Resort.png",
       "url": "https://eyeconicpixel.com/resortnew/",
       "category":"LandingPage Design"
     },
     {
       "thumbImgUrl": "/assets/img/small-site-img/Limani.jpg",
-      "bigImgUrl": "/assets/img/big-site/Limani.jpg",
+      "bigImgUrl": "/assets/img/big-site/Limani.png",
       "url": "https://eyeconicpixel.com/ruchi/david",
       "category":"LandingPage Design"
     },
     {
       "thumbImgUrl": "/assets/img/small-site-img/trip-usd.jpg",
-      "bigImgUrl": "/assets/img/big-site/trip-usd.jpg",
+      "bigImgUrl": "/assets/img/big-site/trip-usd.png",
       "url": "https://eyeconicpixel.com/ruchi/tripusd/",
       "category":"LandingPage Design"
     },
     {
       "thumbImgUrl": "/assets/img/small-site-img/airwave.jpg",
-      "bigImgUrl": "/assets/img/big-site/airwave.jpg",
+      "bigImgUrl": "/assets/img/big-site/airwave.png",
       "url": "https://eyeconicpixel.com/ruchi/airwave2/",
-      "category":"Website Design"
+      "category":"LandingPage Design"
     },
     {
       "thumbImgUrl": "/assets/img/small-site-img/medsengage.jpg",
-      "bigImgUrl": "/assets/img/big-site/medsengage.jpg",
+      "bigImgUrl": "/assets/img/big-site/medsengage.png",
       "url": "https://eyeconicpixel.com/html-medsengage/",
       "category":"Website Design"
+    },
+     {
+      "thumbImgUrl": "/assets/img/small-site-img/UI-1.jpg",
+      "bigImgUrl": "/assets/img/big-site/UI-1.png",
+      "category":"UX/UI"
+    },
+    {
+      "thumbImgUrl": "/assets/img/small-site-img/UI-2.jpg",
+      "bigImgUrl": "/assets/img/big-site/UI-2.png",
+      "category":"UX/UI"
+    },
+      {
+      "thumbImgUrl": "/assets/img/small-site-img/UI-3.jpg",
+      "bigImgUrl": "/assets/img/big-site/UI-3.png",
+      "category":"UX/UI"
+    },
+     {
+      "thumbImgUrl": "/assets/img/small-site-img/UI-4.jpg",
+      "bigImgUrl": "/assets/img/big-site/UI-4.png",
+      "category":"UX/UI"
+    },
+     {
+      "thumbImgUrl": "/assets/img/small-site-img/UI-5.jpg",
+      "bigImgUrl": "/assets/img/big-site/UI-5.jpg",
+      "category":"UX/UI"
+    },
+     {
+      "thumbImgUrl": "/assets/img/small-site-img/UI-6.png",
+      "bigImgUrl": "/assets/img/big-site/UI-6.jpg",
+      "category":"UX/UI"
     }
 
 ]
